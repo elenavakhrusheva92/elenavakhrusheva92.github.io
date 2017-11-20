@@ -1,0 +1,12 @@
+body {
+	background: #000;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 20%;
+	color: #ff1;
+	text-transform: uppercase;
+}
