@@ -1,0 +1,12 @@
+
+* font-family: 'Montserrat', sans-serif;
+
+.menu-top__menu-item {
+	color: #343e5c;
+	font-size: 15px;
+	font-family: 600;
+}
+
+.section-main {
+	background-image: url('/img/iphone_6.jpg')
+}
