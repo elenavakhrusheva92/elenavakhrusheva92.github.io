@@ -8,6 +8,10 @@
 /*===============шапка================*/
 header {
 	border-bottom: 1px solid #e3e8f0;
+	
+}
+
+.container__header {
 	display: flex;
     flex-direction: row;
     justify-content: space-between;
