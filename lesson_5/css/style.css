@@ -45,10 +45,12 @@ header {
 	color: #343e5c;
     font-size: 14px;
     padding-right: 30px;
+    text-decoration: none;
 }
 
 .cart-name{
 	line-height: 40px;
+	text-decoration: none;
 }
 
 .cart-name, .login {
@@ -87,6 +89,7 @@ header {
 	font-size: 11px;
 	text-transform: uppercase;
 	text-decoration: none;
+	padding-right: 30px;
 }
 
 .sub-menu__item:active, .sub-menu__item:hover, .sub-menu__item:focus {
