@@ -17,7 +17,7 @@ body {
 /*===============шапка================*/
 header {
 	border-bottom: 1px solid #e3e8f0;
-	
+	padding: 25px 0;
 }
 
 .container__header, .sub-header {
@@ -101,7 +101,11 @@ header {
 	padding-right: 30px;
 }
 
-.sub-menu__item:active, .sub-menu__item:hover, .sub-menu__item:focus {
+.sub-menu__item:active, 
+.sub-menu__item:hover, 
+.sub-menu__item:focus, 
+.sub-header__support-link:hover, 
+.sub-header__support-link:focus {
 	color: #343e5c;
 }
 
