@@ -1,8 +1,17 @@
 
+body {
+	margin: 0;
+    padding: 0;
+    font-family: "Montserrat", 'Arial', sans-serif;
+} 
+
 .container {
     max-width: 1170px;
-    margin: 0px auto;
-    font-family: "Montserrat", 'Arial', sans-serif;
+    margin: 0px auto;    
+}
+
+.container-fluid {
+
 }
 
 /*===============шапка================*/
@@ -48,7 +57,7 @@ header {
     text-decoration: none;
 }
 
-.cart-name{
+.cart-name a{
 	line-height: 40px;
 	text-decoration: none;
 }
@@ -136,17 +145,38 @@ header {
 
 /*============Главный экран==============*/
 .section-main {
-	background-image: url('/lesson_5/img/iphone_6.jpg')
+	 background-image: url(/lesson_5/img/iphone_6.jpg);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    min-height: 500px;
 }
 
 .section-main__title {
 	font-weight: 600;
 	font-size: 42px;
 	color: #fff;
+	padding-top: 10%;
 }
 
 .section-main__description {
 	font-size: 16px;
 	color: #fff;
 	font-family: 'Crimson Text', serif;
+	padding-bottom: 50px;
+}
+
+.section-main__btn-buy {
+	background: #2754eb;
+    border: navajowhite;
+    padding: 15px 45px;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.section-main__btn-buy:hover, .section-main__btn-buy:focus {
+	background-repeat: #fff;
+	border-radius: 2px solid  #2754eb;
+	color:  #2754eb;
 }
