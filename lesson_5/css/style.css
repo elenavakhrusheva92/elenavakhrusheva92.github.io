@@ -57,9 +57,14 @@ header {
     text-decoration: none;
 }
 
-.cart-name a{
+.menu-top__menu-item:hover, .menu-top__menu-item:focus {
+    color: #b9bed1;
+}
+
+.cart-name__link {
 	line-height: 40px;
 	text-decoration: none;
+	color: #343e5c;
 }
 
 .cart-name, .login {
@@ -110,7 +115,7 @@ header {
 }
 
 .sub-header {
-	line-height: 48px;
+	padding-top: 24px;
 }
 
 .sub-header__sub-menu {
