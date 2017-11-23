@@ -1,0 +1,31 @@
+body {
+	background: #f3f5f7;
+	font-family: 'Arvo', sans-serif;
+	
+}
+
+h1 {
+	font-family: 'Arvo', sans-serif;
+	color: #3b3f6a;
+	font-size: 30px;
+	font-weight: 300;
+	padding-bottom: 80px;
+	padding-top: 35px;
+}
+
+.title-preimushestva {
+	font-weight: 600;
+	font-size: 22px;
+	color: #3b3f6a;
+}
+
+.subtitle-preimushestva {
+	font-family: 'Noto Sans', sans-serif;
+	font-size: 20px;
+	color: #686c8a;
+}
+
+.text-center {
+	text-align: center;
+}
+
