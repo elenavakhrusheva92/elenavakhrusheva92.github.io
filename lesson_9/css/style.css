@@ -1,0 +1,126 @@
+html,
+body,
+.container {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+}
+@font-face {
+  font-family: 'Rockwell';
+  src: url('Rockwell-BoldItalic.eot');
+  src: url('Rockwell-BoldItalic.eot?#iefix') format('embedded-opentype'), url('Rockwell-BoldItalic.woff2') format('woff2'), url('Rockwell-BoldItalic.woff') format('woff'), url('Rockwell-BoldItalic.ttf') format('truetype'), url('Rockwell-BoldItalic.svg#Rockwell-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+.navbar {
+  background: #fff;
+  height: 150px;
+  width: 100%;
+  display: table;
+}
+.navbar-nav > li > a {
+  text-transform: uppercase!important;
+}
+.navbar-nav > li:hover {
+  color: #ffe13e !important;
+}
+.navbar-nav > .active > a {
+  color: #ffe13e!important;
+  background-color: transparent!important;
+}
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+.navbar-right_help {
+  font-size: 12px;
+  font-weight: 600;
+}
+.header-contacts {
+  padding-top: 20px;
+}
+.width-border {
+  border-right: 1px solid #202242;
+}
+.header-contacts_chats-button {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #ffe13e;
+  border: 2px solid #fff;
+  padding: 10px 25px;
+}
+.header-contacts_phone {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+}
+.header-contacts_width-border {
+  border-right: 1px solid #202242;
+}
+/* ====first-block===*/
+.first-block {
+  background: url('/img/first-bg.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  display: table;
+  padding-top: 150px;
+}
+.first-block_content {
+  display: table-cell;
+  vertical-align: middle;
+}
+.first-block_content-h1 {
+  font-family: 'Rockwell';
+  font-size: 48px;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+.first-block_content-h2 {
+  font-size: 30px;
+  color: #ffffff;
+  padding-bottom: 45px;
+}
+#form-first-block {
+  background: rgba(255, 255, 255, 0.7);
+  width: 40%;
+  margin: 45px auto 0 auto;
+  padding: 20px;
+}
+.form-first-block_input {
+  font-size: 18px;
+  color: #2d2d2d;
+  padding: 20px;
+  border: none;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.form-first-block_btn-domen {
+  background: #ffe13e;
+  color: #2d2d2d;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  border: none;
+  padding: 20px;
+}
+.form-first-block_btn-check {
+  background: #ffe13e;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  border: none;
+  padding: 20px;
+}
+.form-first-block_hr {
+  border-left: 1px solid #ebebeb;
+}
