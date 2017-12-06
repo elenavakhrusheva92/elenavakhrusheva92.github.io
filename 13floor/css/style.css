@@ -35,8 +35,9 @@ body {
 .strategiya-mobile {
   background: rgba(255, 235, 145, 0.6);
 }
-.design {
-  background: rgba(115, 235, 115, 0.6);
+.design,
+.design-mobile {
+  background: rgba(115, 235, 115, 0.6) !important;
 }
 .prorabotka,
 .prorabotka-mobile {
@@ -48,6 +49,10 @@ body {
 }
 .zavershenie,
 .zavershenie-mobile {
+  background: rgba(187, 184, 220, 0.6);
+}
+.futures,
+.futures-mobile {
   background: rgba(237, 237, 238, 0.6);
 }
 .rounder {
@@ -69,6 +74,16 @@ body {
 }
 .project-table td {
   text-align: center;
+  border-left: 2px dashed #A5A5A5;
+}
+.project-table td:first-child {
+  width: 440px;
+}
+.project-table td:nth-last-child {
+  border-left: none;
+}
+.project-table tr:not(:first-child) > td {
+  width: 87px;
 }
 .project-table_head {
   background: #ffffff !important;
@@ -103,12 +118,6 @@ body {
   }
   .project-table_head {
     display: none;
-  }
-  .step-mobile {
-    display: none;
-  }
-  .design-mobile {
-    background: rgba(115, 235, 115, 0.6) !important;
   }
 }
 @media screen and (min-width: 768px) {
