@@ -5,12 +5,13 @@
 @design: rgba(115, 235, 115, 0.6);
 @prorabotka: rgba(90, 220, 220, 0.6);
 @testing: rgba(90, 220, 255, 0.6);
-@zavershenie: rgba(237, 237, 238, 0.6);
+@zavershenie: rgba(187, 184, 220, 0.6);
+@futures: rgba(237, 237, 238, 0.6);
 @line-colomn: #a5a5a5;
 @line-row: #f9f9fa;
 @fonts-base: 'Museo Sans Cyrl 300';
 @fonts-bold: 'Museo Sans Cyrl 500';
-@border-line-bold: 3px solid #ef3a38;
+@border-line-bold: 3px solid #ef3a38; 
 
 @font-face {
     font-family: 'Museo Sans Cyrl 500';
@@ -43,37 +44,46 @@ body {
   font-family: @fonts-base;
 }
 
-.podgotovka {
-  background: @podgotovka;
-}
-
-.ogidanie {
-  background: @ogidanie;
-}
-
-.strategiya {
-  background: @strategiya;
-}
-
-.design {
-  background: @design;
-}
-
-.prorabotka {
-  background: @prorabotka;
-}
-
-.testing {
-  background: @testing;
-}
-
-.zavershenie {
-  background: @zavershenie;
-}
-
 .none-step {
   background: transparent;
 }
+
+.podgotovka, .podgotovka-mobile {
+  background: @podgotovka;
+}
+
+.podgotovka-mobile {
+  background: @podgotovka!important;
+}
+
+.ogidanie, .ogidanie-mobile {
+  background: @ogidanie;
+}
+ 
+.strategiya, .strategiya-mobile {
+  background: @strategiya;
+}
+ 
+.design, .design-mobile  {
+  background: @design!important;
+}
+
+.prorabotka, .prorabotka-mobile {
+  background: @prorabotka;
+}
+
+.testing, .testing-mobile {
+  background: @testing;
+}
+
+.zavershenie, .zavershenie-mobile {
+  background: @zavershenie;
+}
+
+.futures, .futures-mobile {
+  background: @futures;
+}
+
 
 .rounder {
   min-width: 87px;
@@ -96,6 +106,18 @@ body {
 
     & td {
       text-align: center;
+      border-left: 2px dashed #A5A5A5;
+    }
+
+    & td:first-child {
+      width: 440px;
+    }
+
+    & td:nth-last-child {
+        border-left: none;
+      }
+    & tr:not(:first-child)>td {
+      width: 87px;
     }
 }
 
@@ -109,7 +131,7 @@ body {
   text-align: left!important;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .project-table {
       border: 0;
@@ -124,6 +146,9 @@ body {
         font-size: 13px;
         border-bottom: 1px dotted #ccc;
       }
+
+      
+
       & td:last-child {
         border-bottom: 0;
       }
@@ -139,10 +164,9 @@ body {
       display: none;
     }
 
-
   }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
 
    .none-step {
       display: none;
