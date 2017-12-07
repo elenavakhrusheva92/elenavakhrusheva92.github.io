@@ -17,43 +17,72 @@ body {
   font-size: 13px;
   font-family: 'Museo Sans Cyrl 300';
 }
+.project-table_head th {
+  color: #a5a5a5;
+}
+.project-table_head th:first-child {
+  color: #5E5E5E;
+  text-align: left;
+}
+.project-table_name-project_prosrochka {
+  color: #ff3232 !important;
+  font-weight: 500;
+}
 .none-step {
   background: transparent;
 }
 .podgotovka,
-.podgotovka-mobile {
+.podgotovka-mobile,
+.footer_step-name_podgotovka {
   background: rgba(248, 171, 173, 0.6);
 }
-.podgotovka-mobile {
-  background: rgba(248, 171, 173, 0.6) !important;
-}
 .ogidanie,
-.ogidanie-mobile {
+.ogidanie-mobile,
+.footer_step-name_ogidanie {
   background: rgba(255, 200, 100, 0.6);
 }
 .strategiya,
-.strategiya-mobile {
+.strategiya-mobile,
+.footer_step-name_strategiya {
   background: rgba(255, 235, 145, 0.6);
 }
 .design,
-.design-mobile {
-  background: rgba(115, 235, 115, 0.6) !important;
+.design-mobile,
+.footer_step-name_design {
+  background: rgba(115, 235, 115, 0.6);
 }
 .prorabotka,
-.prorabotka-mobile {
+.prorabotka-mobile,
+.footer_step-name_prorabotka {
   background: rgba(90, 220, 220, 0.6);
 }
 .testing,
-.testing-mobile {
+.testing-mobile,
+.footer_step-name_testing {
   background: rgba(90, 220, 255, 0.6);
 }
 .zavershenie,
-.zavershenie-mobile {
+.zavershenie-mobile,
+.footer_step-name_zavershrenie {
   background: rgba(187, 184, 220, 0.6);
 }
 .futures,
 .futures-mobile {
   background: rgba(237, 237, 238, 0.6);
+}
+.footer_step-name_podgotovka,
+.footer_step-name_ogidanie,
+.footer_step-name_strategiya,
+.footer_step-name_design,
+.footer_step-name_prorabotka,
+.footer_step-name_testing,
+.footer_step-name_zavershrenie {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin-right: 5px;
 }
 .rounder {
   min-width: 87px;
@@ -78,6 +107,7 @@ body {
 }
 .project-table td:first-child {
   width: 440px;
+  color: #6E6E6E;
 }
 .project-table td:nth-last-child {
   border-left: none;
@@ -91,6 +121,30 @@ body {
 }
 .project-table_name-project {
   text-align: left!important;
+  font-size: 17px;
+}
+footer {
+  padding-top: 20px;
+}
+footer,
+.footer-step {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_logo-img-reponsive {
+  max-width: 100%;
+  height: auto;
+  width: 120px;
+}
+.footer_step-name {
+  margin-right: 50px;
+  float: left;
+  text-transform: uppercase;
+  color: #a5a5a5;
+}
+.footer_step-name:nth-last-child {
+  margin-right: 0;
 }
 @media screen and (max-width: 768px) {
   .project-table {

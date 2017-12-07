@@ -12,6 +12,8 @@
 @fonts-base: 'Museo Sans Cyrl 300';
 @fonts-bold: 'Museo Sans Cyrl 500';
 @border-line-bold: 3px solid #ef3a38; 
+@footer-step-name: #a5a5a5;
+@prosrochka-step: #FF3232;
 
 @font-face {
     font-family: 'Museo Sans Cyrl 500';
@@ -44,39 +46,49 @@ body {
   font-family: @fonts-base;
 }
 
+.project-table_head th {
+  color: #a5a5a5;
+  
+  &:first-child {
+    color: #5E5E5E;
+    text-align: left;
+  }
+}
+
+.project-table_name-project_prosrochka {
+  color: @prosrochka-step!important;
+  font-weight: 500;
+}
+
 .none-step {
   background: transparent;
 }
 
-.podgotovka, .podgotovka-mobile {
+.podgotovka, .podgotovka-mobile, .footer_step-name_podgotovka {
   background: @podgotovka;
 }
 
-.podgotovka-mobile {
-  background: @podgotovka!important;
-}
-
-.ogidanie, .ogidanie-mobile {
+.ogidanie, .ogidanie-mobile, .footer_step-name_ogidanie {
   background: @ogidanie;
 }
  
-.strategiya, .strategiya-mobile {
+.strategiya, .strategiya-mobile, .footer_step-name_strategiya {
   background: @strategiya;
 }
  
-.design, .design-mobile  {
-  background: @design!important;
+.design, .design-mobile, .footer_step-name_design {
+  background: @design;
 }
 
-.prorabotka, .prorabotka-mobile {
+.prorabotka, .prorabotka-mobile, .footer_step-name_prorabotka {
   background: @prorabotka;
 }
 
-.testing, .testing-mobile {
+.testing, .testing-mobile, .footer_step-name_testing {
   background: @testing;
 }
 
-.zavershenie, .zavershenie-mobile {
+.zavershenie, .zavershenie-mobile, .footer_step-name_zavershrenie {
   background: @zavershenie;
 }
 
@@ -84,6 +96,20 @@ body {
   background: @futures;
 }
 
+.footer_step-name_podgotovka, 
+.footer_step-name_ogidanie, 
+.footer_step-name_strategiya,
+.footer_step-name_design,
+.footer_step-name_prorabotka,
+.footer_step-name_testing,
+.footer_step-name_zavershrenie {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: block;
+  float: left;
+  margin-right: 5px;
+}
 
 .rounder {
   min-width: 87px;
@@ -111,6 +137,7 @@ body {
 
     & td:first-child {
       width: 440px;
+      color: #6E6E6E;
     }
 
     & td:nth-last-child {
@@ -129,7 +156,39 @@ body {
 
 .project-table_name-project {
   text-align: left!important;
+  font-size: 17px;
 }
+
+
+
+footer {
+  padding-top: 20px;
+}
+
+footer, .footer-step {
+  display: -webkit-flex; 
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_logo-img-reponsive {
+  max-width: 100%;
+  height: auto;
+  width: 120px;
+}
+
+.footer_step-name {
+  margin-right: 50px;
+  float: left;  
+  text-transform: uppercase;
+  color: @footer-step-name;
+  
+  &:nth-last-child {
+    margin-right:0;
+  }
+}
+
+
 
 @media screen and (max-width: 768px) {
 
