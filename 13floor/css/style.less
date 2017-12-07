@@ -13,7 +13,7 @@
 @fonts-bold: 'Museo Sans Cyrl 500';
 @border-line-bold: 3px solid #ef3a38; 
 @footer-step-name: #a5a5a5;
-@prosrochka-step: #FF3232;
+@prosrochka-step: #FF3232; 
 
 @font-face {
     font-family: 'Museo Sans Cyrl 500';
@@ -58,6 +58,10 @@ body {
 .project-table_name-project_prosrochka {
   color: @prosrochka-step!important;
   font-weight: 500;
+}
+
+.step-prosrochka {
+  border: @border-line-bold;
 }
 
 .none-step {
@@ -203,24 +207,34 @@ footer, .footer-step {
         display: block;
         text-align: right;
         font-size: 13px;
-        border-bottom: 1px dotted #ccc;
+        border-bottom: 3px solid #fff;
+        width: 100%;
+        height: 21px;
       }
 
-      
+      & tr:not(:first-child) > td {
+        width: 100%;
+      }
 
       & td:last-child {
         border-bottom: 0;
       }
-      &  td:before {
+      & td:before {
         content: attr(data-label);
         float: left;
         text-transform: uppercase;
         font-weight: bold;
+        margin-left: 10px;
+        padding-top: 3px;
       }
     }
 
     .project-table_head {
       display: none;
+    }
+
+    .footer_step-name {
+      float: none;
     }
 
   }
