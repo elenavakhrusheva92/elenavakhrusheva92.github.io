@@ -8,15 +8,15 @@
 }
 @font-face {
   font-family: 'NatGroteskWebLightRegular';
-  src: url('/fonts/NTG45__W/NTG45__W.eot');
-  src: url('/fonts/NTG45__W/NTG45__W.eot?#iefix') format('embedded-opentype'), url('/fonts/NTG45__W/NTG45__W.woff2') format('woff2'), url('/fonts/NTG45__W/NTG45__W.woff') format('woff'), url('/fonts/NTG45__W/NTG45__W.ttf') format('truetype'), url('/fonts/NTG45__W/NTG45__W.svg#NatGroteskWebLight-Regular') format('svg');
+  src: url('../fonts/NTG45__W/NTG45__W.eot');
+  src: url('../fonts/NTG45__W/NTG45__W.eot?#iefix') format('embedded-opentype'), url('../fonts/NTG45__W/NTG45__W.woff2') format('woff2'), url('../fonts/NTG45__W/NTG45__W.woff') format('woff'), url('/fonts/NTG45__W/NTG45__W.ttf') format('truetype'), url('/fonts/NTG45__W/NTG45__W.svg#NatGroteskWebLight-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NatGroteskWebLightItalic';
-  src: url('/fonts/NTG46__W/NTG46__W.eot');
-  src: url('/fonts/NTG46__W/NTG46__W.eot?#iefix') format('embedded-opentype'), url('/fonts/NTG46__W/NTG46__W.woff2') format('woff2'), url('/fonts/NTG46__W/NTG46__W.woff') format('woff'), url('/fonts/NTG46__W/NTG46__W.ttf') format('truetype'), url('/fonts/NTG46__W/NTG46__W.svg#NatGroteskWebLight-Italic') format('svg');
+  src: url('../fonts/NTG46__W/NTG46__W.eot');
+  src: url('../fonts/NTG46__W/NTG46__W.eot?#iefix') format('embedded-opentype'), url('/fonts/NTG46__W/NTG46__W.woff2') format('woff2'), url('/fonts/NTG46__W/NTG46__W.woff') format('woff'), url('/fonts/NTG46__W/NTG46__W.ttf') format('truetype'), url('/fonts/NTG46__W/NTG46__W.svg#NatGroteskWebLight-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
