@@ -33,7 +33,8 @@
                     <span class="icon-bar"></span>
                   </button>
                   <a class="navbar-brand" href="/">
-                    <img src="img/logo.svg" alt="13 этаж" class="img-responsive">
+                    <img src="img/logo.svg" alt="13 этаж" class="img-responsive navbar-brand_logo">
+                    <span class="navbar-brand_mob-logo">13 Этaж</span>
                   </a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
@@ -48,27 +49,33 @@
               </div><!--/.container-fluid -->
             </nav>
 
-            <div class="container header-title">
-              <img src="img/kavichki.svg" class="img-responsive" alt="">
-              <h1 class="header-title_h1">Мы усиливаем дизайн маркетинговой стратегией.<br>А стратегию — чистым точным дизайном.</h1>
+            <div class="container">
+              <div class="header-title">
+                <img src="img/kavichki.svg" class="img-responsive" alt="">
+                <h1 class="header-title_h1">Мы усиливаем дизайн маркетинговой стратегией.<br>А стратегию — чистым точным дизайном.</h1>
+              </div>
             </div>
             <div class="rezons">
               <div class="container">
-                <div class="col-md-3">
-                  <h2>Брендинг</h2>
+                <div class="col-sm-1-5">
+                  <h2 class="rezons_title">Позиционирование</h2>
                   <p class="rezons_description">Бренд является абстрактным названием. Физическими составляющими (носителями) бренда является весь комплекс элементов фирменного стиля.</p>
                 </div>
-                <div class="col-md-3">
-                  <h2>Стратегия</h2>
-                  <p class="rezons_description">Стратегия позиционирования является важным элементом рекламной компании. Стратегия реализуется с помощью различного применения характерных признаков.</p>
+                <div class="col-sm-1-5">
+                  <h2 class="rezons_title">Брендинг</h2>
+                  <p class="rezons_description">Бренд является абстрактным названием. Физическими составляющими (носителями) бренда является весь комплекс элементов фирменного стиля.</p>
                 </div>
-                <div class="col-md-3">
-                  <h2>Веб-дизайн</h2>
-                  <p class="rezons_description">Отрасль веб-разработки и разновидность дизайна, в задачи которой входит проектирование пользовательских веб-интерфейсов для сайтов или веб-приложений.</p>
+                <div class="col-sm-1-5">
+                  <h2 class="rezons_title">Стратегия</h2>
+                  <p class="rezons_description">Бренд является абстрактным названием. Физическими составляющими (носителями) бренда является весь комплекс элементов фирменного стиля.</p>
                 </div>
-                <div class="col-md-3">
-                  <h2>Полиграфия</h2>
-                  <p class="rezons_description">Это область промышленности, занимающаяся изготовлением печатной продукции, а именно книжно-журнальной, деловой, газетной, этикеточной и упаковочной продукции.</p>
+                <div class="col-sm-1-5">
+                  <h2 class="rezons_title">Веб-дизайн</h2>
+                  <p class="rezons_description">Бренд является абстрактным названием. Физическими составляющими (носителями) бренда является весь комплекс элементов фирменного стиля.</p>
+                </div>
+                <div class="col-sm-1-5">
+                  <h2 class="rezons_title">Полиграфия</h2>
+                  <p class="rezons_description">Бренд является абстрактным названием. Физическими составляющими (носителями) бренда является весь комплекс элементов фирменного стиля.</p>
                 </div>
               </div>
             </div>
@@ -77,8 +84,8 @@
       </div>
     </header>
 
-    <section>
-      <div class="container"> 
+    <section id="project">
+      <div class="container project_container"> 
         <div class="clearfix mosaicflow">  
           <div class="mosaicflow__row">
             <div class="mosaicflow__column">
@@ -177,7 +184,7 @@
       </div>
     </section>
 
-<section>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -185,48 +192,48 @@
           </div>
         </div>
       </div>
-</section>
+    </section>
 
-<section>
+    <section>
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h2>Оставить задачу</h2>
+            <h2 class="form-title">Оставить задачу</h2>
           </div>
           <div class="col-md-8">
             <form id="forma-index" class="appnitro"  method="post" action="">
               <div class="form-group col-md-12">
-                <label class="description" for="name">Ваше имя </label>
-                <input id="name" name="name" class="forma-index_name" type="text" maxlength="255" value=""/> 
+                <label class="forma-index_label" for="name">Ваше имя </label>
+                <input id="name" name="name" class="forma-index_name" type="text" maxlength="255" value="" pattern="[А-Яа-Я]{3,}"/> 
               </div>
 
               <div class="form-group col-md-6">
-                <label class="description" for="tel-mail">Номер телефона или электронная почта </label>
+                <label class="forma-index_label" for="tel-mail">Номер телефона или электронная почта </label>
                 <input id="tel-mail" name="tel-mail" class="forma-index_tel-mail" type="text" maxlength="255" value=""/> 
               </div>
 
               <div class="form-group col-md-3">
-                <label class="description" for="type-project">Тип проекта</label>
-                <select class="form-control"> 
+                <label class="forma-index_label" for="type-project">Тип проекта</label>
+                <select class="form-control forma-index_select"> 
                   <option value="" selected="selected"></option>
-                  <option value="1" >Тип 1</option>
-                  <option value="2" >Тип 2</option>
-                  <option value="3" >Тип 3</option>
+                  <option value="1" class="forma-index_select-option">Тип 1</option>
+                  <option value="2" class="forma-index_select-option">Тип 2</option>
+                  <option value="3" class="forma-index_select-option">Тип 3</option>
                 </select>
               </div>
 
               <div class="form-group col-md-3">
-                <label class="description" for="money">Бюджет </label>
+                <label class="forma-index_label" for="money">Бюджет </label>
                 <input id="money" name="money" class="forma-index_money" type="text" maxlength="255" value=""/> 
               </div>
 
               <div class="form-group col-md-12">
-                <label class="description" for="about">Расскажите немного о проекте </label>
-                <textarea id="about" name="about" class="forma-index_about form-control" rows="3"></textarea> 
+                <label class="forma-index_label" for="about">Расскажите немного о проекте </label>
+                <textarea id="about" name="about" class="forma-index_textarea form-control" rows="3"></textarea> 
               </div>
 
               <div class="col-md-12 clear">
-                <input id="saveForm" class="button_text" type="submit" name="submit" value="Обсудить проект" />   
+                <input id="saveForm" class="" type="submit" name="submit" value="Обсудить проект" />   
               </div>          
             </form> 
           </div>
@@ -261,13 +268,13 @@
           agency@13f.ru<br>
           +7 (34 12) 90-85-90
         </div>
-        <div class="col-md-2 footer_social">
+        <div class="col-md-2 col-sm-6 col-xs-6 footer_social">
           <a href="#">instagram</a><br>
           <a href="#">vkontakte</a><br>
           <a href="#">facebook</a><br>
           <a href="#">medium</a>
         </div>
-        <div class="col-md-2 footer_news">
+        <div class="col-md-2 col-sm-6 col-xs-6 footer_news">
           <a href="#">Реформа</a><br>
           <a href="#">Библиотика</a><br>
           <a href="#">Завтрак</a><br>
@@ -275,6 +282,13 @@
         </div>
       </div>
     </div>
+
+    <div class="col-md-4 footer_contacts-last">
+          Ижевск, Холмогорова, 15,<br>
+          офис 213<br>
+          agency@13f.ru<br>
+          +7 (34 12) 90-85-90
+        </div>
 
     <div class="container footer-bottom">
       <div class="row">

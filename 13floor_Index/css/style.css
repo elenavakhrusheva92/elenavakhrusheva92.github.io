@@ -35,8 +35,7 @@
   font-style: normal;
 }
 html,
-body,
-header {
+body {
   height: 100%;
   clear: both;
 }
@@ -47,12 +46,11 @@ body {
   background-color: #f7f7f7;
   color: #000000;
   text-align: left;
-  font-family: 'NatGroteskWebLightRegular';
+  font-family: 'NatGroteskWebRegular';
 }
-/*
 header {
-  height: 100vh;
-}*/
+  height: auto;
+}
 .site-wrapper {
   display: table;
   width: 100%;
@@ -68,32 +66,50 @@ header {
   margin-right: auto;
   margin-left: auto;
 }
+.navbar {
+  margin-bottom: 0;
+}
 .navbar-right_item {
   color: #000000;
   font-size: 20px;
+  font-family: 'NatGroteskWebLightRegular';
+}
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #000;
+}
+.navbar-brand_mob-logo {
+  color: #231f20;
+  font-size: 20px;
 }
 .header-title {
-  width: 75%;
-  padding-top: 90px;
-  padding-bottom: 119px;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .header-title_h1 {
   font-size: 35px;
   line-height: 45px;
-  font-family: 'NatGroteskWebLightRegular';
 }
 .rezons {
-  padding-bottom: 100px;
+  padding-bottom: 80px;
+}
+.rezons_title {
+  font-size: 20px;
+  line-height: 25px;
 }
 .rezons_description {
-  font-family: 'NatGroteskWebRegular';
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 18px;
 }
 .project_photo {
   height: 100%;
   float: left;
-  padding: 5px;
+  padding-right: 8px;
 }
 .project-title,
 .project-title_h2h3,
@@ -108,7 +124,7 @@ header {
   padding: 30px 37px 30px 37px;
 }
 .project-title_h3 {
-  padding: 66px 35px;
+  padding: 63px 35px;
   font-size: 25px;
 }
 .project-title_h2h3 > h2,
@@ -125,7 +141,7 @@ header {
 }
 .project-description_subtitle {
   font-size: 14px;
-  line-height: 14px;
+  line-height: 18px;
 }
 .mosaicflow__column {
   float: left;
@@ -140,17 +156,125 @@ header {
 }
 .hr-razdelitel {
   color: #000;
-  background-color: #000;
-  border: 0px none;
+  /*background-color: #000;
+  border-top: 0.5px solid #000;*/
   height: 0.5px;
   margin: 80px 0 60px 0;
 }
 /*FORMA*/
+.form-title {
+  font-size: 25px;
+}
+.forma-index_label {
+  font-family: 'NatGroteskWebLightRegular';
+  font-size: 16px;
+  font-weight: 100;
+}
+.forma-index_select,
+.forma-index_textarea {
+  border: 1px solid #000;
+  padding: 5px 14px;
+  font-size: 16px;
+  border-radius: 0;
+  background: transparent;
+}
+.forma-index_select:focus,
+.forma-index_textarea:focus,
+.forma-index_select:active,
+.forma-index_textarea:active,
+.forma-index_select:hover,
+.forma-index_textarea:hover {
+  background: #fff;
+  border: 1px solid #000!important;
+  box-shadow: none;
+}
+.forma-index_select {
+  background-image: url(../img/arrow.svg);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  position: relative;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0;
+  outline: none;
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  /*ie fix*/
+  /*firefox fix*/
+  text-indent: 0.01px;
+  text-overflow: '';
+  /*end of firefox fix*/
+  cursor: pointer;
+}
+.forma-index_select:focus,
+.forma-index_select:active,
+.forma-index_select:hover {
+  background-image: url(../img/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+}
+.forma-index_textarea {
+  overflow: hidden;
+}
+.form-group {
+  margin-bottom: 20px;
+}
 input[type=text] {
   width: 100%;
+  padding: 5px 14px;
+  font-size: 16px;
+  border: 1px solid #000;
+  background: transparent;
 }
-textarea {
-  overflow: hidden;
+input[type=text]:focus {
+  background: #fff;
+  border: 1px solid #000!important;
+  box-shadow: none;
+}
+input[type=text]:focus,
+input[type=text]:active,
+input[type=text]:hover {
+  background: #fff;
+  border: 1px solid #000!important;
+  box-shadow: none;
+}
+input[type=text]:focus,
+input[type=text]:active,
+input[type=text]:hover {
+  background: #fff;
+  border: 1px solid #000!important;
+  box-shadow: none;
+}
+input[type=submit] {
+  padding: 10px 14px;
+  font-size: 16px;
+  line-height: 16px;
+  border: 1px solid #000;
+  color: #000;
+  background: transparent;
+}
+input[type=submit]:focus,
+input[type=submit]:active,
+input[type=submit]:hover {
+  background: #f7f7f7;
+  border: 2px solid #000!important;
+  box-shadow: none;
+}
+.submit_no-active {
+  border: 1px solid #969696;
+  color: #969696;
+}
+.forma-index_select-option {
+  color: #757575;
+  font-size: 12px;
+  line-height: 20px;
+}
+.forma-index_select-option:focus,
+.forma-index_select-option:active,
+.forma-index_select-option:hover {
+  background-color: #000;
+  color: #fff;
 }
 .copyright {
   text-align: right;
@@ -158,15 +282,112 @@ textarea {
 /*footer*/
 footer {
   clear: both;
+  font-size: 16px;
+  line-height: 21px;
+  font-family: 'NatGroteskWebLightRegular';
 }
-#forma-footer input[type=text] {
+#forma-footer input[type=text],
+#forma-footer input[type=submit] {
   width: 90%;
+  margin-bottom: 5px;
 }
 .footer-top {
   padding-bottom: 34px;
 }
+.footer_news > a,
+.footer_social > a {
+  color: #000;
+}
+.footer_news > a:focus,
+.footer_social > a:focus,
+.footer_news > a:active,
+.footer_social > a:active,
+.footer_news > a:hover,
+.footer_social > a:hover {
+  font-weight: 600;
+  text-decoration: none;
+}
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.col-xs-1-5 {
+  width: 20%;
+  float: left;
+}
+@media (min-width: 768px) {
+  .col-sm-1-5 {
+    width: 20%;
+    float: left;
+  }
+  .navbar-brand_mob-logo {
+    display: none!important;
+  }
+  .footer_contacts-last {
+    display: none!important;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1-5 {
+    width: 20%;
+    float: left;
+  }
+  .container {
+    width: 994px;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1-5 {
+    width: 20%;
+    float: left;
+  }
+}
 @media (min-width: 1200px) {
   .container {
     width: 1024px;
+  }
+}
+@media (max-width: 425px) {
+  .navbar-brand_logo {
+    display: none!important;
+  }
+  .header-title {
+    padding-top: 40px;
+  }
+  .navbar-brand {
+    line-height: 50px;
+  }
+  .project_container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .project_photo {
+    padding-right: 0;
+  }
+  .mosaicflow__item img {
+    width: 100vw;
+  }
+  .project-description {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .footer_contacts {
+    display: none!important;
+  }
+}
+@media (max-width: 768px) {
+  .footer_contacts,
+  .footer_contacts-last {
+    padding-bottom: 30px;
+  }
+}
+@media (max-width: 320px) {
+  .copyright {
+    text-align: left;
   }
 }
