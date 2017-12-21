@@ -9,28 +9,28 @@
 @font-face {
   font-family: 'NatGroteskWebLightRegular';
   src: url('../fonts/NTG45__W/NTG45__W.eot');
-  src: url('../fonts/NTG45__W/NTG45__W.eot?#iefix') format('embedded-opentype'), url('../fonts/NTG45__W/NTG45__W.woff2') format('woff2'), url('../fonts/NTG45__W/NTG45__W.woff') format('woff'), url('/fonts/NTG45__W/NTG45__W.ttf') format('truetype'), url('/fonts/NTG45__W/NTG45__W.svg#NatGroteskWebLight-Regular') format('svg');
+  src: url('../fonts/NTG45__W/NTG45__W.eot?#iefix') format('embedded-opentype'), url('../fonts/NTG45__W/NTG45__W.woff2') format('woff2'), url('../fonts/NTG45__W/NTG45__W.woff') format('woff'), url('../fonts/NTG45__W/NTG45__W.ttf') format('truetype'), url('../fonts/NTG45__W/NTG45__W.svg#NatGroteskWebLight-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NatGroteskWebLightItalic';
   src: url('../fonts/NTG46__W/NTG46__W.eot');
-  src: url('../fonts/NTG46__W/NTG46__W.eot?#iefix') format('embedded-opentype'), url('/fonts/NTG46__W/NTG46__W.woff2') format('woff2'), url('/fonts/NTG46__W/NTG46__W.woff') format('woff'), url('/fonts/NTG46__W/NTG46__W.ttf') format('truetype'), url('/fonts/NTG46__W/NTG46__W.svg#NatGroteskWebLight-Italic') format('svg');
+  src: url('../fonts/NTG46__W/NTG46__W.eot?#iefix') format('embedded-opentype'), url('../fonts/NTG46__W/NTG46__W.woff2') format('woff2'), url('../fonts/NTG46__W/NTG46__W.woff') format('woff'), url('../fonts/NTG46__W/NTG46__W.ttf') format('truetype'), url('../fonts/NTG46__W/NTG46__W.svg#NatGroteskWebLight-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NatGroteskWebRegular';
-  src: url('/fonts/NTG55__W/NTG55__W.eot');
-  src: url('/fonts/NTG55__W/NTG55__W.eot?#iefix') format('embedded-opentype'), url('/fonts/NTG55__W/NTG55__W.woff2') format('woff2'), url('/fonts/NTG55__W/NTG55__W.woff') format('woff'), url('/fonts/NTG55__W/NTG55__W.ttf') format('truetype'), url('/fonts/NTG55__W/NTG55__W.svg#NatGroteskWeb-Regular') format('svg');
+  src: url('../fonts/NTG55__W/NTG55__W.eot');
+  src: url('../fonts/NTG55__W/NTG55__W.eot?#iefix') format('embedded-opentype'), url('../fonts/NTG55__W/NTG55__W.woff2') format('woff2'), url('../fonts/NTG55__W/NTG55__W.woff') format('woff'), url('../fonts/NTG55__W/NTG55__W.ttf') format('truetype'), url('../fonts/NTG55__W/NTG55__W.svg#NatGroteskWeb-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'NatGroteskWebItalic';
-  src: url('/fonts/NTG56__W/NTG56__W.eot');
-  src: url('/fonts/NTG56__W/NTG56__W.eot?#iefix') format('embedded-opentype'), url('/fonts/NTG56__W/NTG56__W.woff2') format('woff2'), url('/fonts/NTG56__W/NTG56__W.woff') format('woff'), url('/fonts/NTG56__W/NTG56__W.ttf') format('truetype'), url('/fonts/NTG56__W/NTG56__W.svg#NatGroteskWeb-Italic') format('svg');
+  src: url('../fonts/NTG56__W/NTG56__W.eot');
+  src: url('../fonts/NTG56__W/NTG56__W.eot?#iefix') format('embedded-opentype'), url('../../fonts/NTG56__W/NTG56__W.woff2') format('woff2'), url('../fonts/NTG56__W/NTG56__W.woff') format('woff'), url('../fonts/NTG56__W/NTG56__W.ttf') format('truetype'), url('../fonts/NTG56__W/NTG56__W.svg#NatGroteskWeb-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -74,6 +74,14 @@ header {
   font-size: 20px;
   font-family: 'NatGroteskWebLightRegular';
 }
+.navbar-right_item:focus,
+.navbar-right_item:active,
+.navbar-right_item:hover {
+  background: transparent!important;
+  font-weight: bold;
+  color: #000;
+  font-family: 'NatGroteskWebRegular';
+}
 .navbar-toggle .icon-bar {
   display: block;
   width: 10px;
@@ -105,6 +113,7 @@ header {
 .rezons_description {
   font-size: 14px;
   line-height: 18px;
+  width: 90%;
 }
 .project_photo {
   height: 100%;
@@ -116,15 +125,15 @@ header {
 .project-title_h3 {
   background: #fff;
   font-size: 25px;
-  width: 98%;
+  width: 100%;
   padding: 20px 30px;
-  margin: 5px;
+  margin: 8px 0;
 }
 .project-title_h2h3 {
   padding: 30px 37px 30px 37px;
 }
 .project-title_h3 {
-  padding: 63px 35px;
+  padding: 53px 35px;
   font-size: 25px;
 }
 .project-title_h2h3 > h2,
@@ -153,6 +162,9 @@ header {
 .mosaicflow__item img:hover {
   opacity: 0.6;
   filter: alpha(opacity=60);
+}
+.text-poject-block {
+  width: 100%;
 }
 .hr-razdelitel {
   color: #000;
@@ -185,7 +197,7 @@ header {
 .forma-index_select:hover,
 .forma-index_textarea:hover {
   background: #fff;
-  border: 1px solid #000!important;
+  border: 2px solid #000!important;
   box-shadow: none;
 }
 .forma-index_select {
@@ -217,6 +229,14 @@ header {
 .forma-index_textarea {
   overflow: hidden;
 }
+.forma-index_textarea:focus,
+.forma-index_textarea:hover {
+  border: 2px solid #000!important;
+  box-shadow: none;
+}
+.forma-index_textarea:active {
+  background: #fff;
+}
 .form-group {
   margin-bottom: 20px;
 }
@@ -226,22 +246,14 @@ input[type=text] {
   font-size: 16px;
   border: 1px solid #000;
   background: transparent;
-}
-input[type=text]:focus {
-  background: #fff;
-  border: 1px solid #000!important;
-  box-shadow: none;
+  outline: none;
 }
 input[type=text]:focus,
-input[type=text]:active,
 input[type=text]:hover {
-  background: #fff;
-  border: 1px solid #000!important;
+  border: 2px solid #000!important;
   box-shadow: none;
 }
-input[type=text]:focus,
-input[type=text]:active,
-input[type=text]:hover {
+input[type=text]:active {
   background: #fff;
   border: 1px solid #000!important;
   box-shadow: none;
@@ -253,6 +265,7 @@ input[type=submit] {
   border: 1px solid #000;
   color: #000;
   background: transparent;
+  outline: none;
 }
 input[type=submit]:focus,
 input[type=submit]:active,
@@ -273,8 +286,15 @@ input[type=submit]:hover {
 .forma-index_select-option:focus,
 .forma-index_select-option:active,
 .forma-index_select-option:hover {
-  background-color: #000;
   color: #fff;
+  background: #000;
+  border: 2px solid #000;
+}
+.label-error {
+  color: #ff0000;
+}
+.input-error {
+  border: 2px solid #ff0000;
 }
 .copyright {
   text-align: right;
@@ -317,12 +337,12 @@ footer {
   padding-left: 10px;
 }
 .col-xs-1-5 {
-  width: 20%;
+  width: 19.5%;
   float: left;
 }
 @media (min-width: 768px) {
   .col-sm-1-5 {
-    width: 20%;
+    width: 19.5%;
     float: left;
   }
   .navbar-brand_mob-logo {
@@ -349,13 +369,10 @@ footer {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1024px;
+    width: 1000px;
   }
 }
 @media (max-width: 425px) {
-  .navbar-brand_logo {
-    display: none!important;
-  }
   .header-title {
     padding-top: 40px;
   }
@@ -378,6 +395,18 @@ footer {
   }
   .footer_contacts {
     display: none!important;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-brand_logo {
+    display: none!important;
+  }
+  .navbar-right_item {
+    background: #f0f0f0;
+    border-bottom: 2px solid #ffffff;
+  }
+  .navbar-right_item_last {
+    border-bottom: none;
   }
 }
 @media (max-width: 768px) {
