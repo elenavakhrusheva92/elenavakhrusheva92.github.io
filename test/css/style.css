@@ -56,6 +56,7 @@ p {
 .test_table tr td:first-child {
   vertical-align: middle;
   text-align: center;
+  width: 15%;
 }
 .test_table-img {
   max-width: 177px;
