@@ -30,7 +30,7 @@ p {
   height: 90vh;
   width: 100%;
   position: relative;
-  background-image: url(/img/bg-left.svg), url(/img/bg-right.svg);
+  background-image: url(/13floor_NewYear/img/bg-left.svg), url(/13floor_NewYear/img/bg-right.svg);
   background-position: center left, center right;
   background-repeat: no-repeat, no-repeat, no-repeat;
   display: table;
@@ -205,12 +205,12 @@ button:hover {
   right: 0px;
   bottom: 2px;
   left: 0px;
-  background-image: url(/img/tick.svg);
+  background-image: url(/13floor_NewYear/img/tick.svg);
   background-repeat: no-repeat;
   border-radius: 2px;
 }
 .main_bg-answer-block {
-  background: url('/img/border.svg');
+  background: url('/13floor_NewYear/img/border.svg');
   background-size: 100%;
   background-repeat: no-repeat;
   max-width: 340px;
@@ -273,7 +273,7 @@ button:hover {
   height: auto;
   width: 100%;
   position: relative;
-  background-image: url(/img/present-open.svg);
+  background-image: url(/13floor_NewYear/img/present-open.svg);
   background-position: top center;
   background-repeat: no-repeat;
   display: table;
@@ -319,7 +319,7 @@ button:hover {
 .present-row_open-item {
   height: 90px;
   position: relative;
-  background-image: url(/img/mini-present-open.svg);
+  background-image: url(/13floor_NewYear/img/mini-present-open.svg);
   background-position: top center;
   background-repeat: no-repeat;
   display: table;
@@ -360,7 +360,7 @@ button:hover {
   display: block;
   height: 14px;
   width: 18px;
-  background: url(/img/eyes.png) no-repeat left 2px;
+  background: url(/13floor_NewYear/img/eyes.png) no-repeat left 2px;
   cursor: pointer;
   margin-right: 3px;
 }
