@@ -1,0 +1,556 @@
+
+
+@base-font: 'NatGroteskWebRegular';
+@light-font: 'NatGroteskWebLightRegular';
+@lightitalic-font:'NatGroteskWebLightItalic';
+@italic-font: 'NatGroteskWebItalic';
+
+@font-face {
+  font-family: 'NatGroteskWebRegular';
+  src: url('/fonts/NTG55__W/NTG55__W.eot');
+  src:
+       url('/fonts/NTG55__W/NTG55__W.eot?#iefix') format('embedded-opentype'),
+       url('/fonts/NTG55__W/NTG55__W.woff2') format('woff2'),
+       url('/fonts/NTG55__W/NTG55__W.woff') format('woff'),
+       url('/fonts/NTG55__W/NTG55__W.ttf') format('truetype'),
+       url('/fonts/NTG55__W/NTG55__W.svg#NatGroteskWeb-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html, body{
+  height: 100%;
+  min-height: 100%;
+  font-family: 'NatGroteskWebRegular';
+}
+
+
+html {
+  min-height:100%;
+  height: auto;
+}
+
+body {
+  height: 100%;
+  font-family: 'NatGroteskWebRegular';
+  padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+
+}
+
+.main_bg,
+.main_bg-mobile {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+  background-image: url(/img/bg-left.svg), url(/img/bg-right.svg);
+  background-position: center left, center right;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  display: table;
+  background-size: 20%;
+}
+
+.main_bg-form,
+.main_bg-answer {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.link-home {
+  padding: 28px 36px 0 36px;
+}
+
+a {
+  color: #0b5cae;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+#index-form,
+#dop-form,
+.main_bg-answer-block {
+  width:30%;
+  max-width: 300px;
+  border: none;
+  text-align: left;
+  margin: 0 auto;
+  }
+
+.index-form_title,
+.dop-form_title,
+.main_bg-answer-title {
+  margin: 0px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  /* padding-right: 10px; */
+  /* padding-left: 10px; */
+  /* text-align: center; */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  text-decoration: none;
+  font-family: 'NatGroteskWebRegular';
+  }
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    display:block;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #969696;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 4px;
+    color: #898989;
+    text-align: left;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    outline: none;
+    padding: 0 10px;
+  }
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="email"]:hover {
+  border: 1px solid #000000;
+
+  }
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+  color: #000;
+}
+
+button {
+    display:block;
+    width:138px;
+    height :40px;
+    padding:10px;
+    font-size: 18px;
+    border: none;
+    color:#616161;
+    text-align:center;
+    background-color: #eaeaea;
+    -moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+    cursor:pointer;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    margin-right: 19px;
+
+  }
+
+.index-form_btn-check,
+.dop-form_btn-check {
+    margin-top:20px auto;
+  }
+
+button:hover
+ {
+  outline: none;
+  background-color:#981a25;
+  color: #fff;
+  }
+
+.index-form_submit,
+.index-form_check,
+.dop-form_submit,
+.dop-form_check {
+  display: inline-block;
+  float: left;
+
+}
+
+.index-form_label,
+.dop-form_label {
+  color: #616161;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.index-form_label,
+#index-form_login,
+#index-form_pass,
+.dop-form_label,
+#dop-form_login,
+#dop-form_pass {
+  width: 100%;
+}
+
+/* Скрываем реальный чекбокс */
+.index-form_check,
+.dop-form_check {
+	display: none;
+}
+/* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+.index-form_check-custom,
+.dop-form_check-custom {
+	position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background-color: #fff;
+  border: 1px solid #969696;
+  margin-right: 4px;
+}
+/* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+.index-form_check-custom,
+.index-form_check-label,
+.dop-form_check-custom,
+.dop-form_check-label{
+	display: inline-block;
+	vertical-align: middle;
+  line-height: 40px;
+
+}
+
+.index-form_check-label,
+.dop-form_check-label {
+  color: #616161;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.index-form_subtitle {
+  font-size: 14px;
+  color: #898989;
+}
+
+.group-form {
+    margin-bottom: 25px;
+}
+
+/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+.index-form_check:checked + .index-form_check-custom::before,
+.dop-form_check:checked + .dop-form_check-custom::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    bottom: 2px;
+    left: 0px;
+    background-image: url(/img/tick.svg);
+    background-repeat: no-repeat;
+	  border-radius: 2px;
+}
+
+.main_bg-answer-block {
+  background: url('/img/border.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: 340px;
+  width: 100%;
+  /*padding: 40px 20px;*/
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 27px;
+  min-height: 130px;
+  display: table;
+
+}
+
+.main_bg-answer-block-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.main_bg-answer-title {
+  padding-bottom: 16px;
+  padding-top: 0;
+}
+
+.main_bg-answer-subtitle {
+  margin-top: 0;
+}
+
+.main_bg-answer {
+  font-size: 16px;
+  text-align: center;
+}
+
+.answer-wrapper {
+  display: table;
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+.answer-container {
+  display:table-cell;
+  vertical-align:middle;
+  text-align: center;
+  padding: 15px;
+}
+
+.answer-container_subtitle,
+.answer-container_subtitle a {
+  font-size: 14px;
+}
+
+  /*============= PRESENT =============*/
+
+.present-wrapper {
+  display: table;
+  height: 90vh;
+  max-width: 550px;
+  position: relative;
+  margin: 0 auto;
+  padding-top: 34px;
+}
+
+.present-container {
+  display: table-cell;
+  vertical-align: top;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+}
+
+.present-block {
+  height: auto;
+  width: 100%;
+  position: relative;
+  background-image: url(/img/present-open.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: table;
+}
+
+.present-block_img {
+  padding: 35px 0 50px 0;
+}
+
+.present-block_subtitle {
+  font-size: 12px;
+  color: #616161;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.present-block_subtitle-link {
+  font-size: 12px;
+}
+
+.present-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  align-content: space-around;
+  height: auto;
+  width: 100%;
+}
+
+.present-row_item {
+  padding-right: 25px;
+  padding-bottom: 25px;
+}
+
+.present-container_description {
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+}
+
+.present-container_description p {
+  padding-bottom: 16px;
+}
+
+.present-container_description-greytext {
+  color: #616161;
+}
+
+.present-row_open-item {
+  height: 90px;
+  position: relative;
+  background-image: url(/img/mini-present-open.svg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: table;
+  max-width: 100%;
+  width: 70px;
+  margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.present-row_item-book {
+  max-width: 50%;
+  padding: 0;
+  padding-top: 14px;
+  padding-bottom: 20px;
+}
+
+.present-row_item-book_subtitle {
+  font-size:  12px;
+  color:  #616161;
+}
+
+.present-row_item-book_subtitle img {
+  padding-right: 5px;
+  max-height: 12px;
+}
+
+
+  /*============ PassEye ============= */
+  .passEye {
+    position:relative;
+    display:inline-block;
+    width: 100%;
+  }
+
+  .passEye input::-ms-reveal,
+  .passEye input::-ms-clear {
+    display:none
+  }
+
+  .passEye .eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -15px;
+    display: block;
+    height: 14px;
+    width: 18px;
+    background: url(/img/eyes.png) no-repeat left 2px;
+    cursor: pointer;
+    margin-right: 3px;
+  }
+  .passEye .openEye {
+    background-position:left bottom;
+    height: 11px;
+    margin-top: -13px;
+  }
+
+
+
+
+/*======== MEDIA ==========*/
+
+
+  @media (max-width:768px) {
+    .main_bg {
+      height: 90vh;
+      background-size: 20%;
+      background-position: top left, top right;
+    }
+    .main_bg-for,
+    .main_bg-answer {
+      vertical-align: bottom;
+    }
+    .link-home {
+      padding: 25px 16px 15px 16px;
+    }
+    #index-form,
+    #dop-form {
+      margin-bottom: 10%;
+      width: 100%;
+      max-width: 300px;
+    }
+
+  }
+
+@media (max-width:500px) {
+  .main_bg {
+      background-size: 20%;
+  }
+
+  .main_bg-answer-block {
+    max-width: 285px;
+    min-height: 110px;
+  }
+
+}
+
+@media (max-width:425px) {
+  .present-row_open-item {
+    margin-bottom: 20px;
+  }
+}
+
+
+@media (max-width:375px) {
+  .main_bg {
+      height: 80vh;
+  }
+
+  .present-row_item {
+    padding-right: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+
+@media (max-width:320px) {
+  .main_bg {
+    height: 90vh;
+    background-size: 30%;
+  }
+  #index-form,
+  #dop-form {
+    max-width: 290px;
+  }
+
+}
+
+
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+  #index-form,
+  #dop-form {
+      max-width: 230px;
+      padding-top: 55%;
+  }
+  input[type="submit"] {
+    width: 39%;
+  }
+  .main_bg {
+    height: 100%;
+  }
+
+  .index-form_btn-check,
+  .dop-form_btn-check {
+    margin: 20px auto;
+    text-align: center;
+    width: 100%;
+  }
+
+    .index-form_submit,
+    .index-form_check,
+    .dop-form_submit,
+    .dop-form_check {
+      float: none;
+    }
+
+    button {
+      display: block!important;
+      margin-right: 0;
+      margin: 0 auto;
+    }
+
+    .index-form_title {
+      width: 90%;
+    }
+
+
+
+ }
